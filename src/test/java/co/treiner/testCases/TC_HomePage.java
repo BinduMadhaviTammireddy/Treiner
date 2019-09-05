@@ -18,10 +18,13 @@ public class TC_HomePage extends Base
 		if(driver.getTitle().equals("Signup – Treiner: The easy way to compare and book soccer coaches"))
 			{
 				Assert.assertTrue(true);
+				
+				logger.info("tittle matches the expected title");
 			}
 		else
 			{
 				Assert.assertTrue(false);
+				logger.error("tittle does not match the expected.");
 			}
 		super.previousPage();
 		_home.clicklogin();

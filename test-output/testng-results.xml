@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36380" started-at="2019-08-30T05:13:59Z" finished-at="2019-08-30T05:14:35Z">
+  <suite name="Default suite" duration-ms="30025" started-at="2019-09-05T00:01:33Z" finished-at="2019-09-05T00:02:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36380" started-at="2019-08-30T05:13:59Z" finished-at="2019-08-30T05:14:35Z">
+    <test name="Default test" duration-ms="30025" started-at="2019-09-05T00:01:33Z" finished-at="2019-09-05T00:02:03Z">
       <class name="co.treiner.testCases.TC_HomePage">
-        <test-method status="PASS" signature="setup()[pri:0, instance:co.treiner.testCases.TC_HomePage@7b69c6ba]" name="setup" is-config="true" duration-ms="1838" started-at="2019-08-30T05:13:59Z" finished-at="2019-08-30T05:14:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:co.treiner.testCases.TC_HomePage@bf75b5c]" name="setup" is-config="true" duration-ms="2340" started-at="2019-09-05T00:01:33Z" finished-at="2019-09-05T00:01:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="navigationTest()[pri:0, instance:co.treiner.testCases.TC_HomePage@7b69c6ba]" name="navigationTest" duration-ms="33915" started-at="2019-08-30T05:14:01Z" finished-at="2019-08-30T05:14:35Z">
+        <test-method status="PASS" signature="navigationTest()[pri:0, instance:co.treiner.testCases.TC_HomePage@bf75b5c]" name="navigationTest" duration-ms="27040" started-at="2019-09-05T00:01:35Z" finished-at="2019-09-05T00:02:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigationTest -->
-        <test-method status="PASS" signature="end()[pri:0, instance:co.treiner.testCases.TC_HomePage@7b69c6ba]" name="end" is-config="true" duration-ms="594" started-at="2019-08-30T05:14:35Z" finished-at="2019-08-30T05:14:35Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:co.treiner.testCases.TC_HomePage@bf75b5c]" name="end" is-config="true" duration-ms="593" started-at="2019-09-05T00:02:02Z" finished-at="2019-09-05T00:02:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

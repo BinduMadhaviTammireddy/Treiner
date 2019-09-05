@@ -5,7 +5,7 @@
     <classes>
       <class name="co.treiner.testCases.TC_HomePage">
         <methods>
-          <include name="smoketest"/>
+          <include name="navigationTest"/>
           <include name="end"/>
           <include name="setup"/>
         </methods>
