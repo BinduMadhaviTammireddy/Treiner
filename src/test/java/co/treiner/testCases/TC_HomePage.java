@@ -10,7 +10,7 @@ public class TC_HomePage extends Base
 	@Test
 	public void navigationTest()
 	{	
-		driver.navigate().to(Home_Url);	
+		//driver.navigate().to(Home_Url);	
 		HomePage _home = new HomePage(driver);
 		_home.clickSignup();
 		super.screenwait();
