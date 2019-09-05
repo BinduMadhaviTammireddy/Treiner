@@ -1,5 +1,9 @@
 package co.treiner.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,13 +21,13 @@ public class TC_HomePage extends Base
 		
 		if(driver.getTitle().equals("Signup – Treiner: The easy way to compare and book soccer coaches"))
 			{
-				Assert.assertTrue(true);
+				AssertJUnit.assertTrue(true);
 				
 				logger.info("tittle matches the expected title");
 			}
 		else
 			{
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 				logger.error("tittle does not match the expected.");
 			}
 		super.previousPage();
@@ -32,11 +36,11 @@ public class TC_HomePage extends Base
 		
 		if(driver.getTitle().equals("Login Page – Treiner: The easy way to compare and book soccer coaches"))
 			{
-				Assert.assertTrue(true);
+				AssertJUnit.assertTrue(true);
 			}
 		else
 			{
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 			}
 		
 	
