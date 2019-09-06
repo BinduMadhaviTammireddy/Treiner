@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="treiner Test(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="co.treiner.testCases.TC_HomePage">
         <methods>
@@ -11,5 +12,5 @@
         </methods>
       </class> <!-- co.treiner.testCases.TC_HomePage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- treiner Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
