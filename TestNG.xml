@@ -2,10 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Suite">
+
+
+<listeners>
+
+<listener class-name="co.treiner.utilities.Reporting"/>
+
+</listeners>
+
+
   <test name="treiner Test">
   <parameter name ="browser" value="chrome"/>
+  
     <classes>
       <class name="co.treiner.testCases.TC_HomePage"/>
     </classes>
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->
