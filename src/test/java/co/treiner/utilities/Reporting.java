@@ -38,11 +38,10 @@ public class Reporting extends TestListenerAdapter
 		extent=new ExtentReports();
 		
 		extent.attachReporter(htmlReporter);
+		
 		extent.setSystemInfo("Host name","localhost");
-		extent.setSystemInfo("Environemnt","QA");
 		
-		
-		htmlReporter.config().setDocumentTitle("InetBanking Test Project"); // Tile of report
+		htmlReporter.config().setDocumentTitle("Treiner Test Project"); // Tile of report
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
 		htmlReporter.config().setTheme(Theme.DARK);
 	}
@@ -58,7 +57,8 @@ public class Reporting extends TestListenerAdapter
 		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
 		
-		String screenshotPath=".\\Screenshots\\"+tr.getName()+".png";
+		//String screenshotPath=".\\Screenshots\\"+tr.getName()+".png";
+		String screenshotPath=".\\Screenshots\\tttt.png";
 		
 		File f = new File(screenshotPath); 
 		
