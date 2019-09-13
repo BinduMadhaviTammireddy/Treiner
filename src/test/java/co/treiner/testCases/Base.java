@@ -6,8 +6,14 @@ import org.testng.annotations.Parameters;
 
 import co.treiner.utilities.ReadConfig;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -58,9 +64,26 @@ public class Base {
 				e.printStackTrace();
 			}
 	}
+	public static String getScreenshot(String screenshotPath) 
+	{
+		
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File img =ts.getScreenshotAs(OutputType.FILE);
+		//String screenshotPath="./Screenshot/xxx.png";
+		File destination =new File(screenshotPath);
+		try {
+			FileUtils.copyFile(img,destination);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return screenshotPath;
+	}
 	public void previousPage()
 	{
 		driver.navigate().back();
 	}
+
+
 	
 }

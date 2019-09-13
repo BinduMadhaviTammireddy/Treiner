@@ -1,8 +1,7 @@
 package co.treiner.testCases;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-
+import org.testng.Assert;
 
 import co.treiner.pageObjects.HomePage;
 
@@ -18,26 +17,29 @@ public class TC_HomePage extends Base
 		
 		if(driver.getTitle().equals("Signup – Treiner: The easy way to compare and book soccer coaches"))
 			{
-				AssertJUnit.assertTrue(true);
-				
-				logger.info("tittle matches the expected title");
+			logger.info("tittle matches the expected title");
+				Assert.assertTrue(true);
 			}
 		else
 			{
-				AssertJUnit.assertTrue(false);
-				logger.error("tittle does not match the expected.");
+			logger.error("tittle does not match the expected.");
+			Assert.assertTrue(false);
+				
 			}
 		super.previousPage();
 		_home.clicklogin();
 		super.screenwait();
 		
-		if(driver.getTitle().equals("Login Page – Treiner: The easy way to compare and book soccer coaches"))
+		if(driver.getTitle().equals("Login Page – : The easy way to compare and book soccer coaches"))
 			{
-				AssertJUnit.assertTrue(true);
+			logger.info("tittle matches the expected title");
+			Assert.assertTrue(true);
 			}
 		else
 			{
-				AssertJUnit.assertTrue(false);
+			logger.error("tittle does not match the expected.");
+			Assert.assertTrue(false);
+			
 			}
 		
 	
