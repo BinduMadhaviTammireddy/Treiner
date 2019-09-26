@@ -19,6 +19,9 @@ public class HomePage {
 	
 	@FindBy(linkText="Login")
 	WebElement loginLink;
+	@FindBy(id="search_keywords")
+	WebElement cityName;
+	
 	
 	public void clickSignup()
 	{	
@@ -29,4 +32,5 @@ public class HomePage {
 	{	
 		loginLink.click();
 	}
+
 }

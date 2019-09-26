@@ -30,7 +30,7 @@ public class TC_HomePage extends Base
 		_home.clicklogin();
 		super.screenwait();
 		
-		if(driver.getTitle().equals("Login Page – : The easy way to compare and book soccer coaches"))
+		if(driver.getTitle().equals("Login Page – Treiner: The easy way to compare and book soccer coaches"))
 			{
 			logger.info("tittle matches the expected title");
 			Assert.assertTrue(true);

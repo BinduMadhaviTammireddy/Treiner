@@ -16,8 +16,6 @@
 		public static XSSFSheet ws;
 		public static XSSFRow row;
 		public static XSSFCell cell;
-
-		
 		
 		public static int getRowCount(String xlfile,String xlsheet) throws IOException 
 		{
